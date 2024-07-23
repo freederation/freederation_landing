@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000000, #434343);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Global Section Styles */
+.section {
+    padding: 2rem 1rem;
+    text-align: left;
+    margin-left: 10vw;  
+    margin-right: 10vw; 
+    margin-bottom: 10vh;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.30rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Media Queries */
+
+
+@media (max-width: 768px) {
+    body, html {
+        margin: 0 !important; 
+        padding: 0 !important; 
+    }
+
+    .section {
+        padding: 0;
+        margin: 5vh 5vh;
+        flex-direction: row;
+        margin-bottom: 10vh;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 485px) {
+    h3 {
+        font-size: 0.65rem;
+    }
+    p {
+        font-size: 0.65rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .section {
+        margin-left: 10vw;  
+        margin-right: 10vw; 
+        margin-bottom: 10vh;
+    }
+}

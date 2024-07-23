@@ -1,0 +1,156 @@
+.introduction-container {
+  text-align: center;
+  flex: 1 1 100%;
+  align-self: flex-start;
+}
+
+#about_freederation .proto-cards-container {
+  grid-template-columns: repeat(2, 2fr);
+  gap: 10px; 
+  display: left;
+  margin-right: auto;
+}
+
+.proto-problem-to-solve-title,
+.proto-problem-to-solve-subtitle {
+  margin: 0;
+}
+
+.information-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.proto-svg-container {
+  flex: 1;
+  text-align: center;
+}
+
+.proto-problem-of-saas-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.proto-cards-container {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+@media (max-width: 767px) {
+  .information-container {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .proto-svg-container {
+    width: 100%; 
+  }
+
+  .proto-problem-of-saas-image {
+    width: 100%; 
+  }
+  .proto-cards-container {
+    width: 100%;
+    max-width: 316px;
+    gap: 10px;
+    margin: 10% auto 0; 
+  }
+  
+  .proto-svg-container {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .information-container {
+    flex-direction: row;
+  }
+  #about_freederation .card {
+    width: 160px;
+    height: 160px;
+  }
+
+  .card-title {
+    font-size: 1.2em;
+    
+  }
+
+  .card-description {
+    font-size: 0.9em;
+  }
+  .proto-cards-container {
+    gap: 15px;
+    max-width: 500px;
+    margin-left: 150px;
+  }
+  #about_freederation .proto-cards-container {
+    max-width: 400px;
+    
+  }
+  .proto-svg-container {
+    min-width: 500px;
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .information-container {
+    flex-direction: row;
+  }
+
+  .introduction-container {
+    text-align: right;
+    order: 1;
+    transform: translateY(30%);
+    margin-bottom: 3%;
+  }
+
+  #about_freederation .introduction-container {
+    margin-right: 10%;
+  }
+
+  #about_freederation .proto-svg-container {
+    order: 2; 
+    margin-left: 80px; 
+  }
+
+  .proto-svg-container {
+    order: 2; 
+    margin-right: 40px; 
+    max-width: 515px;
+    max-height: 515px;
+  }
+
+  .proto-cards-container {
+    max-width: 600px;
+    gap: 10px; 
+    order: 3; 
+    justify-self: end; 
+    margin-left: auto; 
+  }
+
+  .card-title {
+    font-size: 1.5em;
+  }
+
+  .card-description {
+    font-size: 1em;
+  }
+  .proto-svg-container {
+    min-width: 400px;
+    min-height: 400px;
+  }
+
+  #about_freederation .proto-cards-container {
+    max-width: 400px;
+  }
+  #about_freederation .information-container {
+    gap:15%
+  }
+}

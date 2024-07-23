@@ -1,0 +1,149 @@
+
+.how-works-title {
+  text-decoration: underline;
+}
+
+@media (min-width: 1300px) {
+  #how_it_works.section {
+    background: linear-gradient(to bottom, #303030, #3a3a3a, #444444, #4e4e4e, #585858);
+    border-radius: 90px; 
+
+  }
+  .star-planet-island-content {
+    background: radial-gradient(circle at center, hsla(0, 0%, 20%, 1) 0%, hsla(0, 0%, 10%, 1) 100%);
+    border-radius: 45px;
+    padding: 5vh 5vh;
+    width: 900px;
+    margin: 0 auto;
+  }
+
+
+
+  .how-works-title {
+    text-align: center;
+  } 
+
+  .how-works-subtitle {
+    text-align: center;
+  }
+
+
+  .regen-star-container, .meta-island-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 5%;
+  }
+
+  .regen-star-container .text-content, .meta-island-container .text-content {
+    flex: 1;
+    text-align: left;
+   
+    max-width: 40vh;
+  }
+
+  .regen-star-container img, .meta-island-container img , .regen-planet-container img {
+    max-width: 300px;
+    height: auto;
+  }
+
+
+  .regen-planet-container {
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 5%;
+  }
+
+  .regen-planet-container .text-content {
+    flex: 1;
+    text-align: right; 
+    max-width: 40vh; 
+  }
+
+  .regen-planet-container img {
+    max-width: 300px; 
+    height: auto;
+  }
+
+
+
+
+}
+
+@media (min-width: 769px) and (max-width: 1299px) {
+  .star-planet-island-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .regen-star-container, .meta-island-container, .regen-planet-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap : 15px;
+    margin-bottom: 25px;;
+  }
+
+  .regen-star-container .text-content, .meta-island-container .text-content, .regen-planet-container .text-content {
+    flex: 1;
+    text-align: left;
+    max-width: 50vh;
+    
+  }
+
+  .regen-star-container img, .meta-island-container img, .regen-planet-container img {
+    max-width: 250px;
+    height: auto;
+  }
+
+  .regen-planet-container {
+    flex-direction: row-reverse;
+  }
+
+  .regen-planet-container .text-content {
+    text-align: right;
+  }
+}
+
+@media (max-width: 768px) {
+  .star-planet-island-content {
+    background: none;
+    width: 100%;
+    
+  }
+
+  .regen-star-container, .meta-island-container, .regen-planet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 0;
+  }
+
+  .regen-star-container .text-content, .meta-island-container .text-content, .regen-planet-container .text-content {
+    text-align: center;
+    max-width: 90%;
+    margin: 10px 0; 
+  }
+
+  .regen-star-container img, .meta-island-container img, .regen-planet-container img {
+    max-width: 340px; 
+    height: auto;
+    margin: 20px 0; 
+  }
+
+  .how-works-title {
+    text-align: center;
+    font-size: 1.5em; 
+  } 
+
+  .how-works-subtitle {
+    text-align: center;
+    font-size: 1.2em; 
+    margin-bottom: 20px; 
+  }
+}

@@ -1,0 +1,61 @@
+
+#hero-section {
+  position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  #hero-section {
+    margin-top: 55px; 
+    width: 70%;
+  }
+  .buttons-hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 120px;
+    gap: 10px;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+
+.buttons-hero-section .btn {
+    width: 100%;
+}
+}
+
+
+@media (min-width: 1300px) {
+  #hero-section {
+    width: 45%; 
+
+  }
+}
+
+.buttons-hero-section {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: stretch;  
+  gap: 10px; 
+  width: 100%;  
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 8vh;
+}
+
+@media (max-width: 768px) {
+  .buttons-hero-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 120px;
+      gap: 10px;
+      margin: 0 auto;
+      margin-top: 5vh;
+  }
+
+  .buttons-hero-section .btn {
+      width: 100%;
+  }
+}
