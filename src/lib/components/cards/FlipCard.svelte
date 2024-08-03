@@ -112,4 +112,10 @@
       max-width: 200px;
     }
   }
+  @media (min-width: 901px) and (max-width: 1200px) {
+    .flip-card {
+      min-width: 160px;
+      max-width: 180px;
+    }
+  }
 </style>

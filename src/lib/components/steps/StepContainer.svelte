@@ -38,6 +38,12 @@
     max-height: 450px;
   }
 
+  @media (max-width: 600px) {
+    :global(.step-image) {
+      max-width: 350px;
+    }
+  }
+
   @media (max-width: 900px) {
     .step-container {
     flex-direction: column;
@@ -68,6 +74,24 @@
   }
 
   @media (min-width: 901px) {
+    .step-container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
 
+    .step-container.row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    .text-content {
+      flex: 0 0 55%;
+      text-align: left;
+    }
+
+    :global(.step-image) {
+      flex: 0 0 25%;
+      max-width: 400px;
+    }
   }
 </style>

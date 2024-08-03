@@ -49,7 +49,7 @@
 
   @media (max-width: 600px) {
     :global(.svg-about-freederation) {
-       margin-bottom: 1rem;
+      margin-bottom: 1rem;
     }
   }
 
@@ -58,5 +58,55 @@
       margin-bottom: 4rem;
     }
   }
-  
+
+  @media (min-width: 901px) and (max-width: 1200px) {
+    .information-container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .proto-svg-container {
+      flex: 1 1 auto; /* Ajuste flexible del contenedor SVG */
+      max-width: 500px;
+      min-width: 300px;
+    }
+
+    .cards-section {
+      flex: 1 1 auto; /* Ajuste flexible del contenedor de tarjetas */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    :global(.svg-about-freederation) {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1201px) {
+    .information-container {
+      justify-content: center;
+    }
+
+    .proto-svg-container {
+      flex: 1 0 auto;
+      max-width: 460px;
+    }
+
+    .cards-section {
+      flex: 1 0 auto;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+      max-width: 400px;
+    }
+
+    :global(.svg-about-freederation) {
+      margin-bottom: 0;
+      width: 100%;
+    }
+  }
 </style>

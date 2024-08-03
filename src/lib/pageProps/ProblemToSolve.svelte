@@ -17,7 +17,9 @@
   <Title text={title.text} className="title-problem-to-solve" />
   <Subtitle text={subtitle.text} className="subtitle-problem-to-solve" />
   <div class="content-problem-to-solve">
-    <Image src={svgPath} alt="Illustration" className="svg-diagram-problem-to-solve" />
+    <div class="svg-container">
+      <Image src={svgPath} alt="Illustration" className="svg-diagram-problem-to-solve" />
+    </div>
     <div class="cards-section">
       {#each cards as card}
         <FlipCard frontFace={card.frontFace || ''} backFace={card.backFace || ''} />
@@ -27,57 +29,116 @@
 </section>
 
 <style>
+  .content-problem-to-solve {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .svg-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
   :global(.svg-diagram-problem-to-solve) {
     margin-bottom: 2rem;
     margin-top: 1.2rem;
+    width: 100%;
   }
 
   .cards-section {
     display: grid;
-    gap: 16px; /* gap fijo en píxeles */
-    grid-template-columns: repeat(2, 1fr); /* Por defecto, 2 columnas */
+    gap: 16px; 
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     justify-items: center;
   }
 
   @media (max-width: 600px) {
     .cards-section {
-      grid-template-columns: repeat(2, 1fr); /* Mantén 2 columnas */
-      grid-template-rows: repeat(3, auto); /* 3 filas */
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
     }
-  }
-
-  @media (min-width: 500px) and (max-width: 600px) {
-    .cards-section {
-      grid-template-columns: repeat(3, 1fr); /* Cambia a 3 columnas en pantallas de 500px */
-      grid-template-rows: repeat(2, auto); /* 2 filas */
+    .svg-container {
+      justify-content: center;
+      margin-bottom: 2rem;
+      max-width: 400px;
     }
   }
 
   @media (min-width: 601px) and (max-width: 900px) {
     .cards-section {
-      grid-template-columns: repeat(3, 1fr); /* Cambia a 3 columnas en pantallas más grandes */
-      grid-template-rows: repeat(2, auto); /* 2 filas */
-    }
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
     
-    .svg-diagram-problem-to-solve {
+    }
+
+    .svg-container {
+      justify-content: center;
+      margin-bottom: 2rem;
+      max-width: 450px;
+    }
+
+    :global(.svg-diagram-problem-to-solve) {
       margin-bottom: 2rem;
       max-width: 550px;
-      display: block; 
       margin: 0 auto;
-      margin-bottom: 2rem;
     }
   }
 
   @media (min-width: 901px) and (max-width: 1200px) {
-    .svg-diagram-problem-to-solve {
-      margin-bottom: 95rem;
-    }
+  .content-problem-to-solve {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5rem;
   }
 
+  .svg-container {
+    flex: 1 1 auto; /* Ajuste flexible del contenedor SVG */
+    max-width: 500px; /* Ajuste del ancho máximo para el SVG */
+    min-width: 300px; /* Ajuste del ancho mínimo para el SVG */
+  }
+
+  .cards-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+   
+    flex: 1 1 auto; /* Ajuste flexible del contenedor de tarjetas */
+    min-width: 300px; /* Ajuste del ancho mínimo para las tarjetas */
+    max-width: 400px; /* Ajuste del ancho máximo para las tarjetas */
+  }
+
+  :global(.svg-diagram-problem-to-solve) {
+    width: 100%;
+  }
+}
+
+
   @media (min-width: 1201px) {
-    .svg-diagram-problem-to-solve {
-      margin-bottom: 85rem;
+    .content-problem-to-solve {
+      justify-content: space-between;
+    }
+
+    .svg-container {
+      flex: 1 0 auto;
+      max-width: 460px;
+    }
+
+    .cards-section {
+      flex: 1 0 auto;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
+      max-width: 400px;
+    }
+
+    :global(.svg-diagram-problem-to-solve) {
+      margin-bottom: 0;
+      width: 100%;
     }
   }
 </style>
