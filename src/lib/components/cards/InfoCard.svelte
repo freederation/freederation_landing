@@ -172,6 +172,15 @@
       width: 100%;
       min-width: 150px;
       aspect-ratio: 1 / 1;
+      padding: 0.6rem;
+    }
+    .info-card .card-content {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .info-card .info-card-number {
+      top: 0.6rem;
+      left: 0.9rem;
     }
   }
 </style>

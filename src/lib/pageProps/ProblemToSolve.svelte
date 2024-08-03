@@ -119,26 +119,44 @@
 }
 
 
-  @media (min-width: 1201px) {
-    .content-problem-to-solve {
-      justify-content: space-between;
-    }
+@media (min-width: 1201px) {
+  .content-problem-to-solve {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 0 5%; 
+    gap: 5rem;
 
-    .svg-container {
-      flex: 1 0 auto;
-      max-width: 460px;
-    }
-
-    .cards-section {
-      flex: 1 0 auto;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, auto);
-      max-width: 400px;
-    }
-
-    :global(.svg-diagram-problem-to-solve) {
-      margin-bottom: 0;
-      width: 100%;
-    }
+    margin: 0 auto; 
   }
+
+  .svg-container {
+    flex: 1 1 50%; 
+    min-width: 400px;
+    max-width: 600px;
+    display: flex;
+    justify-content: flex-start; 
+  }
+
+  .cards-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 16px; 
+    flex: 1 1 50%; 
+    max-width: 600px; 
+    justify-content: flex-end; 
+  }
+
+  :global(.svg-diagram-problem-to-solve) {
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
+
+
+
+
+
 </style>

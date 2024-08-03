@@ -89,19 +89,32 @@
 
   @media (min-width: 1201px) {
     .information-container {
-      justify-content: center;
+      display: flex;
+      flex-direction: row;
+      align-items: center; /* Centra verticalmente los elementos hijos */
+      justify-content: space-between;
+      gap: 5rem; /* Espacio entre los contenedores */
+      max-width: 1400px; /* Ancho máximo del contenedor principal */
+      margin: 0 auto; /* Centra el contenedor principal */
+      padding: 0 2rem; /* Margen lateral para asegurar espacio en los lados */
     }
 
     .proto-svg-container {
-      flex: 1 0 auto;
-      max-width: 460px;
+      flex: 1 1 auto; /* Ajuste flexible del contenedor SVG */
+      min-width: 400px;
+      max-width: 600px;
+      display: flex;
+      justify-content: flex-start; /* Alinea el contenido a la izquierda */
     }
 
     .cards-section {
-      flex: 1 0 auto;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, auto);
-      max-width: 400px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Cambia a 3 columnas */
+      grid-template-rows: repeat(2, auto); /* 2 filas */
+      gap: 16px; /* Ajuste del gap entre las tarjetas */
+      flex: 1 1 auto; /* Ajuste flexible del contenedor de tarjetas */
+      max-width: 600px; 
+      justify-content: flex-end; 
     }
 
     :global(.svg-about-freederation) {

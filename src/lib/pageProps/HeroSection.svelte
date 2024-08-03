@@ -68,6 +68,14 @@
   }
 
   @media (min-width: 1201px) {
-   
+    :global(.title-hero-section) {
+      margin-top: 8vh;
+    }
+    
+    .buttons-hero-section {
+      margin-top: 2.3rem;
+      gap: 1rem;
+      max-width: 550px;
+    }
   }
 </style>

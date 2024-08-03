@@ -15,15 +15,17 @@
     <Subtitle text={subtitle.text} className="subtitle-how-it-works" />
   </div>
 
-  {#each steps as step, index (step.heading)}
-    <StepContainer 
-      heading={step.heading} 
-      description={step.description} 
-      imgSrc={step.img.src} 
-      imgAlt={step.img.alt} 
-      reverse={index % 2 === 1}  
-    />
-  {/each}
+  <div class="star-planet-island-content">
+    {#each steps as step, index (step.heading)}
+      <StepContainer 
+        heading={step.heading} 
+        description={step.description} 
+        imgSrc={step.img.src} 
+        imgAlt={step.img.alt} 
+        reverse={index % 2 === 1}  
+      />
+    {/each}
+  </div>
 </section>
 
 <style>
@@ -52,6 +54,7 @@
     #5c5c5c 100%   
   );
   border-radius: 40px;
+  padding-bottom: 5rem; /* Añade relleno inferior para asegurar espacio */
 }
 
 @media (max-width: 600px) {
@@ -76,13 +79,21 @@
   :global(.title-how-it-works) {
     margin-top: 15%;
   }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
 
 }
 
 @media (min-width: 1201px) {
   #how_it_works.section {
     border-radius: 90px;
+    padding-bottom: 5rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    
   }
-}
 
+
+}
 </style>
