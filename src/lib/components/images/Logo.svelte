@@ -1,7 +1,7 @@
 <script lang="ts">
-    import type { Logo } from '$lib/types/generic';
+    import type { LogoAttributes } from '$lib/types/generic';
   
-    export let logo: Logo;
+    export let logo: LogoAttributes;
     export let className: string = '';
   </script>
   

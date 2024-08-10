@@ -1,15 +1,35 @@
 import type { ProblemToSolveProps } from '$lib/types/typeProps';
 
 export const problemToSolveData: ProblemToSolveProps = {
-  title: { text: "Problem to Solve" },
-  subtitle: { text: "This is an example of a responsive width component using custom CSS classes." },
+  title: { text: "Empowering Decentralized Communities" },
+  subtitle: { 
+    text: "FREEDERATION addresses key challenges by fostering decentralized control, user empowerment, and open collaboration. These metacommunities contribute to training advanced LLMs and build prestige within a scalable and interoperable ecosystem." 
+  },
   svgPath: "/diagrams/diagrams_of_solutions.svg",
   cards: [
-    { frontFace: "Decentralized Control", backFace: "Empowers communities to manage and govern their projects without centralized authority." },
-    { frontFace: "User Empowerment", backFace: "Enables users to take control of their data and contributions, enhancing personal agency and influence." },
-    { frontFace: "Open Source Collaboration", backFace: "Facilitates collective development and improvement of software through transparent and open contributions." },
-    { frontFace: "Interoperability", backFace: "Ensures seamless interaction and compatibility between different systems and platforms." },
-    { frontFace: "Data Privacy", backFace: "Prioritizes the protection of user data, maintaining confidentiality and security." },
-    { frontFace: "Scalable Ecosystem", backFace: "Supports growth and expansion, accommodating increasing numbers of users and applications." }
+    { 
+      frontFace: "Decentralized Control", 
+      backFace: "Empowers communities to govern their projects independently, aiding LLM training and gaining collective prestige."
+    },
+    { 
+      frontFace: "User Empowerment", 
+      backFace: "Gives users control over their data and contributions, boosting influence and supporting LLM learning."
+    },
+    { 
+      frontFace: "Open Source Collaboration", 
+      backFace: "Enables joint software development, with contributions enhancing LLMs and raising community prestige."
+    },
+    { 
+      frontFace: "Interoperability", 
+      backFace: "Ensures systems work together smoothly, improving integration and LLM training."
+    },
+    { 
+      frontFace: "Data Privacy", 
+      backFace: "Protects user data, ensuring security while responsibly advancing LLMs."
+    },
+    { 
+      frontFace: "Scalable Ecosystem", 
+      backFace: "Supports growth and scalability, contributing to LLM development and enhancing community prestige."
+    }
   ]
 };

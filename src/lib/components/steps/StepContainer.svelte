@@ -36,7 +36,7 @@
   max-width: 450px;
   width: 100%;
   height: auto;
-  object-fit: contain; /* Mantiene la proporción y evita recortes */
+  object-fit: contain; 
 }
 
 @media (max-width: 600px) {
@@ -100,7 +100,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    overflow: hidden; /* Asegura que el contenido no desborde */
+    overflow: hidden; 
   }
 
   .step-container.row-reverse {
@@ -113,10 +113,9 @@
   }
 
   :global(.step-image) {
-    flex: 0 0 20%; /* Reduce el tamaño de la imagen a un 20% del contenedor */
-    max-width: 300px; /* Limita el ancho máximo de la imagen */
+    max-width: 350px; 
     height: auto;
-    object-fit: contain; /* Mantiene la proporción y evita recortes */
+    object-fit: contain;
   }
 }
 </style>

@@ -13,8 +13,8 @@
       <h3 class="cta-title">{ctaTitle}</h3>
       <p class="cta-text">{ctaText}</p>
       <div class="cta-buttons">
-        <a href="#" class="cta-btn">Join Now</a>
-        <a href="#" class="cta-btn">Learn More</a>
+        <a href="http://app.freederation.com" class="cta-btn">Join Now</a>
+        <a href="https://freederation.github.io/intro.html" class="cta-btn">Learn More</a>
       </div>
     </div>
     <div class="footer-container">
@@ -40,9 +40,7 @@
       </section>
     </div>
   </footer>
-  
 
-  
   <style>
     #footer {
       background: #111;

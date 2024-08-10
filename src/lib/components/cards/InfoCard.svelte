@@ -13,7 +13,7 @@
     if (cardElement) {
       cardSize = cardElement.clientWidth;
       fontSizeNumber = `${cardSize / 8}px`;
-      fontSizeContent = `${cardSize / 10.4}px`;
+      fontSizeContent = `${cardSize / 15}px`;
     }
   };
 
@@ -172,7 +172,7 @@
       width: 100%;
       min-width: 150px;
       aspect-ratio: 1 / 1;
-      padding: 0.6rem;
+      padding: 0.7rem;
     }
     .info-card .card-content {
       align-items: flex-start;

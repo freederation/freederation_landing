@@ -1,10 +1,20 @@
-import type { Logo, NavLink, Button, FlipCard, HowItWorksStep, Card, TokenType, QuickLink, SocialLink, TitleAttributes, SubtitleAttributes } from './generic';
-
+import type { TitleAttributes, SubtitleAttributes, TextAttributes } from './texts';
+import type { Button, AppButtonProps } from './buttons';
+import type { NavLink, QuickLink } from './links';
+import type { FlipCard, Card } from './cards';
+import type IntroFreederation from '$lib/pageProps/IntroFreederation.svelte';
+import type Title from '$lib/components/text/Title.svelte';
 export interface NavbarProps {
   logo: Logo;
   links: NavLink[];
 }
 
+export interface IntroFreederation {
+  title: TitleAttributes;
+  text: TextAttributes;
+  svgPath: string;
+  buttons: Button[];
+}
 export interface HeroSectionProps {
   title: TitleAttributes;
   subtitle: SubtitleAttributes;

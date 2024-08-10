@@ -5,9 +5,21 @@ export const aboutFreederationData: AboutFreederationProps = {
   subtitle: { text: "Our Mission and Vision" },
   svgPath: "diagrams/process_diagram.svg",
   cards: [
-    { number: 1, content: "Freederation is dedicated to fostering a collaborative and interoperable economy." },
-    { number: 2, content: "Our platform connects developers, investors, and content creators to drive innovation." },
-    { number: 3, content: "We aim to build a better future together through collaboration and shared goals." },
-    { number: 4, content: "Join us to be a part of this exciting journey and make a positive impact on the world." }
+    { 
+      number: 1, 
+      content: "Freederation creates monetizable, collaborative communities and knowledge graphs. Blockchain secures, and our systems protect and reward contributions." 
+    },
+    { 
+      number: 2, 
+      content: "Our platform unites developers, investors, and creators to drive innovation. Collaborate to transform ideas into reality." 
+    },
+    { 
+      number: 3, 
+      content: "We ensure cybersecurity and quality, safeguarding data and maintaining high standards for open-source projects." 
+    },
+    { 
+      number: 4, 
+      content: "Freederation offers insurance and risk coverage, securing projects and ensuring stability for thriving communities." 
+    }
   ]
 };

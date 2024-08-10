@@ -69,13 +69,13 @@
     }
 
     .proto-svg-container {
-      flex: 1 1 auto; /* Ajuste flexible del contenedor SVG */
+      flex: 1 1 auto; 
       max-width: 500px;
       min-width: 300px;
     }
 
     .cards-section {
-      flex: 1 1 auto; /* Ajuste flexible del contenedor de tarjetas */
+      flex: 1 1 auto; 
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
@@ -91,28 +91,28 @@
     .information-container {
       display: flex;
       flex-direction: row;
-      align-items: center; /* Centra verticalmente los elementos hijos */
+      align-items: center; 
       justify-content: space-between;
-      gap: 5rem; /* Espacio entre los contenedores */
-      max-width: 1400px; /* Ancho máximo del contenedor principal */
-      margin: 0 auto; /* Centra el contenedor principal */
-      padding: 0 2rem; /* Margen lateral para asegurar espacio en los lados */
+      gap: 5rem; 
+      max-width: 1400px; 
+      margin: 0 auto; 
+      padding: 0 2rem; 
     }
 
     .proto-svg-container {
-      flex: 1 1 auto; /* Ajuste flexible del contenedor SVG */
+      flex: 1 1 auto; 
       min-width: 400px;
       max-width: 600px;
       display: flex;
-      justify-content: flex-start; /* Alinea el contenido a la izquierda */
+      justify-content: flex-start; 
     }
 
     .cards-section {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); /* Cambia a 3 columnas */
-      grid-template-rows: repeat(2, auto); /* 2 filas */
-      gap: 16px; /* Ajuste del gap entre las tarjetas */
-      flex: 1 1 auto; /* Ajuste flexible del contenedor de tarjetas */
+      grid-template-columns: repeat(2, 1fr); 
+      grid-template-rows: repeat(2, auto); 
+      gap: 16px; 
+      flex: 1 1 auto; 
       max-width: 600px; 
       justify-content: flex-end; 
     }

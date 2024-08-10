@@ -4,11 +4,12 @@ export const footerData: FooterProps = {
   ctaTitle: "Join Us Today",
   ctaText: "Become part of a collaborative and interoperable economy.",
   quickLinks: [
-    { text: "Collaborative Economy", href: "#section1" },
-    { text: "SaaS Problem", href: "#problem-to-solve" },
+    { text: "Join the Knowledge Network", href: "#knowledge-network" },
+    { text: "The prestige revolution", href: "#hero-section" },
+    { text: "Problem to solve", href: "#problem-to-solve" },
     { text: "How It Works", href: "#how_it_works" },
     { text: "About Us", href: "#about_freederation" },
-    { text: "FAQ", href: "#faq" }
+    { text: "Tokens dictionary", href: "#token-dictionary" }
   ],
   socialLinks: [
     { src: "icons/twitter-icon.svg", alt: "Twitter", href: "#" },

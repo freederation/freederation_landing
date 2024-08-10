@@ -1,12 +1,14 @@
 <script lang="ts">
-  import type { TitleAttributes } from '$lib/types/generic';
+  import type { TitleAttributes } from '$lib/types/texts';
 
   export let text: TitleAttributes['text'];
+  export let highlightedText: TitleAttributes['highlightedText'] = '';
   export let className: TitleAttributes['className'] = '';
+  export let highlightColor: string = '#e81cff'; 
 </script>
 
 <h1 class={className}>
-  {text}
+  {text} <span class="highlight" style="color: {highlightColor};">{highlightedText}</span>
 </h1>
 
 <style>

@@ -1,19 +1,18 @@
 <script lang="ts">
-  import type { NavLink } from '$lib/types/generic';
+  import type { NavLink } from '$lib/types/link';
   import AppButton from '$lib/components/buttons/AppButton.svelte';
 
   export let links: NavLink[] = [];
   export let showMenu: boolean = false;
   export let linkClass: string = '';
   export let ulClass: string = '';
-  export let handleButtonClick: () => void;
 </script>
 
 <ul class:show={showMenu} class="nav-links {ulClass}">
   {#each links as link}
     {#if link.text !== 'App'}
       <li>
-        <a href={link.href} target={link.target || "_self"} class={link.class}>
+        <a href={link.href} target={link.target || "_self"} class={link.className}>
           {#if link.icon}
             <img src={link.icon} alt={link.text + ' icon'} class="nav-icon"/>
           {/if}
@@ -22,11 +21,12 @@
       </li>
     {:else}
       <li class="app-button-li">
-        <AppButton label="App" onClick={handleButtonClick} className="additional-class"/>
+        <AppButton label="App" href="/app" className="additional-class" />
       </li>
     {/if}
   {/each}
 </ul>
+
 
 <style>
   .nav-links {

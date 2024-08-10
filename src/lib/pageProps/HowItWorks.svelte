@@ -11,7 +11,12 @@
 
 <section id="how_it_works" class="section">
   <div class="how-works-title-container">
-    <Title text={title.text} className="title-how-it-works" />
+    <Title 
+        text={title.text} 
+        highlightedText={title.highlightedText} 
+        highlightColor="#ccfa04" 
+        className="title-how-it-works" 
+      />
     <Subtitle text={subtitle.text} className="subtitle-how-it-works" />
   </div>
 
@@ -54,7 +59,7 @@
     #5c5c5c 100%   
   );
   border-radius: 40px;
-  padding-bottom: 5rem; /* Añade relleno inferior para asegurar espacio */
+  padding-bottom: 5rem; 
 }
 
 @media (max-width: 600px) {
@@ -91,9 +96,9 @@
     padding-bottom: 5rem;
     margin-left: 5%;
     margin-right: 5%;
-    
   }
-
-
+  :global(.title-how-it-works) {
+    margin-top: 10%;
+  }
 }
 </style>

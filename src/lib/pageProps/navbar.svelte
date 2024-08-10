@@ -17,16 +17,12 @@
       toggleMenu();
     }
   }
-
-  function handleButtonClick() {
-    console.log('Button clicked');
-  }
 </script>
 
 <nav class="navbar">
   <Logo {logo} />
   <HamburgerMenu {toggleMenu} {handleKeyDown} />
-  <NavLinks {links} {showMenu} ulClass="nav-links-navbar" linkClass="link-navbar" {handleButtonClick} />
+  <NavLinks {links} {showMenu} ulClass="nav-links-navbar" linkClass="link-navbar" />
 </nav>
 
 <style>

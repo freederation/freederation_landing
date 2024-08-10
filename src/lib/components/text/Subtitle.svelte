@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { SubtitleAttributes } from '$lib/types/generic';
+  import type { SubtitleAttributes } from '$lib/types/texts';
 
   export let text: SubtitleAttributes['text'];
   export let className: SubtitleAttributes['className'] = '';

@@ -1,11 +1,13 @@
 import type { HeroSectionProps } from '$lib/types/typeProps';
 
 export const heroSectionData: HeroSectionProps = {
-  title: { text: "Collaborative and Interoperable Economy" },
-  subtitle: { text: "FREEDERATION supports and grows Open Source projects by turning them into collaborative franchises. Join us to enhance these projects, connect with innovators, and build a trustworthy digital future." },
+  title: { text: "Revolutionizing the Digital", highlightedText: "Economy" },
+  subtitle: {
+    text: `FREEDERATION is pioneering a new era where prestige is the currency of the web3. By leveraging a collaborative and decentralized approach, we transform Open Source projects into resilient networks of knowledge, creating expansive opportunities for all participants. Join us in shaping a trustworthy and inclusive digital future where everyone can benefit from the collective intelligence.`,
+  },
   buttons: [
-    { label: "Investors", action: () => console.log('Investors clicked') },
-    { label: "Developers", action: () => console.log('Developers clicked') },
-    { label: "Users", action: () => console.log('Users clicked') }
+    { label: "The Value", href: "https://freederation.github.io/valueproposal/valueproposal.html" },
+    { label: "Architecture", href: "https://freederation.github.io/architect/architect.html" },
+    { label: "Network", href: "https://freederation.github.io/franchise/franchise.html" }
   ]
 };

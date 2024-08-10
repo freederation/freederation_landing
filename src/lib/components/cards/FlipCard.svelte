@@ -97,6 +97,7 @@
 
   .flip-card .card-front h2, .flip-card .card-back h3 {
     margin: 0;
+    justify-content: start;
   }
 
   @media (max-width: 600px) {

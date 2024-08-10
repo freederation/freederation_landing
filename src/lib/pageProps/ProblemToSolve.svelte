@@ -9,8 +9,6 @@
   export let subtitle: ProblemToSolveProps['subtitle'];
   export let svgPath: ProblemToSolveProps['svgPath'];
   export let cards: ProblemToSolveProps['cards'];
-
-  console.log('ProblemToSolve svgPath:', svgPath); 
 </script>
 
 <section id="problem-to-solve" class="section">
@@ -98,9 +96,9 @@
   }
 
   .svg-container {
-    flex: 1 1 auto; /* Ajuste flexible del contenedor SVG */
-    max-width: 500px; /* Ajuste del ancho máximo para el SVG */
-    min-width: 300px; /* Ajuste del ancho mínimo para el SVG */
+    flex: 1 1 auto; 
+    max-width: 500px; 
+    min-width: 300px; 
   }
 
   .cards-section {
@@ -108,13 +106,16 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
    
-    flex: 1 1 auto; /* Ajuste flexible del contenedor de tarjetas */
-    min-width: 300px; /* Ajuste del ancho mínimo para las tarjetas */
-    max-width: 400px; /* Ajuste del ancho máximo para las tarjetas */
+    flex: 1 1 auto; 
+    min-width: 300px; 
+    max-width: 400px; 
   }
 
   :global(.svg-diagram-problem-to-solve) {
     width: 100%;
+  }
+  :global(.subtitle-problem-to-solve) {
+    max-width: 700px;
   }
 }
 
@@ -153,10 +154,9 @@
     margin-bottom: 0;
     width: 100%;
   }
+  :global(.subtitle-problem-to-solve) {
+    max-width: 700px;
+  }
 }
-
-
-
-
 
 </style>

@@ -28,8 +28,6 @@
     transition: all 0.3s ease;
   }
 
-  /**
-  @media from 600 to 900*/
   @media (min-width: 601px) and (max-width: 900px) {
     .hamburger-menu span {
       height: 7px;
